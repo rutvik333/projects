@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Contact Form - PHP/MySQL Demo Code</title>
+<title>Form - Update</title>
 <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
@@ -11,9 +11,7 @@
 
 <div class="container">
 <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="https://www.raghwendra.com/blog/wp-content/uploads/2018/09/logo-rwsn.png" alt="" width="240" height="64">
         <h2>Contact us form</h2>
-        <p class="lead">Below is an example form How to connect HTML to database with MySQL using PHP? An example</p>
       </div>
 	  
 	  <?php
@@ -41,7 +39,6 @@ if($totalitems > 0){
 		$fldName=$row['fldName'];
 		$fldEmail=$row['fldEmail'];
 		$fldPhone=$row['fldPhone'];
-		$fldMessage=$row['fldMessage'];
 			
 	
 	?>
@@ -64,10 +61,7 @@ if($totalitems > 0){
 		  <label for="phone">Your Phone</label>
 		  <input type="text"  class="form-control" name="txtPhone" id="txtPhone" placeholder="Phone" value="<?php echo $fldPhone;?>" required>
 		</p>
-		<p>
-		  <label for="message">Message</label>
-		  <textarea name="txtMessage" class="form-control"  id="txtMessage"  placeholder="Message" required><?php echo $fldMessage;?></textarea>
-		</p>
+		
 		<p>&nbsp;</p>
 		<p>
 		  <input type="submit" name="Submit" id="Submit" value="Click me to Update"  class="btn btn-primary btn-lg btn-block">
