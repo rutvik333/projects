@@ -14,7 +14,7 @@ if(isset($_GET['id']))
 	/* Check records is updated  or not. */
 	if($rs)
 	{
-		echo "Contact Records Deleted";
+		echo " Records Deleted";
 	}
 	
 }
