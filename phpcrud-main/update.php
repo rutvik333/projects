@@ -11,7 +11,7 @@
 
 <div class="container">
 <div class="py-5 text-center">
-        <h2>Contact us form</h2>
+        <h2>Form - Update</h2>
       </div>
 	  
 	  <?php
