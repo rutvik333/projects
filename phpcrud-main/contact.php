@@ -9,10 +9,9 @@ if(isset($_POST['txtName']))
 $txtName = $_POST['txtName'];
 $txtEmail = $_POST['txtEmail'];
 $txtPhone = $_POST['txtPhone'];
-$txtMessage = $_POST['txtMessage'];
 
 /* Insert your posted data in your database - insert SQL code. */
-$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtMessage')";
+$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, ) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone')";
 
 /* Run insert query in database.  */
 $rs = mysqli_query($con, $sql);
