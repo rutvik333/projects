@@ -9,11 +9,10 @@ $id = $_POST['selectedid'];
 $txtName = $_POST['txtName'];
 $txtEmail = $_POST['txtEmail'];
 $txtPhone = $_POST['txtPhone'];
-$txtMessage = $_POST['txtMessage'];
 
 /* Update your posted data in your database - insert SQL code. */
 
-$sql = "UPDATE `tbl_contact` SET `fldName` = '$txtName', `fldEmail` = '$txtEmail', `fldPhone` = '$txtPhone', `fldMessage` = '$txtMessage' WHERE `tbl_contact`.`Id` = ".$id;
+$sql = "UPDATE `tbl_contact` SET `fldName` = '$txtName', `fldEmail` = '$txtEmail', `fldPhone` = '$txtPhone'  WHERE `tbl_contact`.`Id` = ".$id;
 
 
 /* Run insert query in database.  */
