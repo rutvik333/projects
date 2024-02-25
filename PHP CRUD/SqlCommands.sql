@@ -46,3 +46,13 @@ SELECT column_lists
 FROM table1    
 FULL [OUTER] JOIN table2    
 ON table1.column = table2.column;   
+
+
+CREATE SEQUENCE My_Sequence AS INT
+START WITH 1
+INCREMENT BY 1
+MINVALUE 1
+MAXVALUE 7
+CYCLE;
+
+UPDATE CUSTOMERS SET ID = NEXT VALUE FOR my_Sequence;
